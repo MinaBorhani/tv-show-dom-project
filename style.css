@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* navbar style */
+header{
+    position: fixed;
+    top:0;
+    z-index: 1;
+    width: 100%;
+    background-color: #f778106e;
+    padding-top: 2rem;
+
+}
+.arti{
+    white-space: 1200px;
+    margin: auto;
+}
+.nav-bar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 0px;
+}
+.logo{
+    grid-column: 2;
+    text-decoration: none;
+    color: #eb640b;
+    padding: 20% , 0;
+}
+.logo:hover{
+    text-transform:capitalize ;
+    color: black;
+}
+.a2{
+    width: 15em;
+    grid-column: 3;
+    margin-right: 2rem;
+    padding: 0;
+    grid-row: 2;
+}
+.a1{
+    width: 15em;
+    grid-column: 0;
+    margin-left: 2rem;
+    padding: 0;
+    grid-row: 2;
+}
+.content-nav .a1::after{
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform-origin: right;
+    transform: scale(0,1);
+    transition: transform ease-in-out 0.5s;
+}
+.selector{
+    color: rgba(245, 76, 9, 0.89);
+    background-color: rgba(48, 28, 10, 0.712);
+}
+.search{
+    color: rgba(245, 76, 9, 0.89);
+    background-color: rgba(48, 28, 10, 0.712);
+}
+
+/* ///////////////////////////////////////////////////////// */
+/* carousel style */
+.carousel-item{
+    height:70vh ;
+    min-height: 300px;
+    background: no-repeat center;
+    -webkit-background-size:cover;
+    background-size: cover;
+}
+.carousel-item::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+
+
+/* /////////////////////////////////////////////////////////////// */
+/* card style */
+.sec2{
+    
+    background-color: #dcdcdc;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+}
+.card{
+    width: 18rem;
+    height: 40rem;
+    margin-top: auto;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: #fbad3883;
+    margin-top: 2rem;
+    padding: 1rem;
+}
+section :hover{
+    box-shadow: 10px 5px 5px rgb(48, 28, 10, 0.712);
+}
+.img{
+    width: 15px;
+    height: 20px;
+    padding-left: 2rem;
+}
+.h5{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    
+}
+
+/* footer style */
+
+.contaner1{
+    max-width: 1170px;
+    margin: auto;
+    
+}
+ul{
+    list-style: none;
+}
+.footer{
+    background-color: #dd6f33d0;
+    padding: 70px 0;
+    
+}
+row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 45%;
+    padding: 0 15px;
+    margin-left: 15px;
+}
+.footer-col h2{
+    font-size: 18px;
+    color: white;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    transition: all 0.3s ease;
+}
+.footer-col h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: red;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+    
+}
+.footer-col h2:hover{
+    padding-left: 8px;
+}
+.footer-col h2{
+    color: white;
+    font-size: 1.5rem;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(65, 57, 21);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5 ease;
+    color: blanchedalmond;
+}
+.footer-col .social-links a:hover{
+    color: black;
+    background-color:blanchedalmond ;
+}
+
+
+
+/* media queri */
+@media screen and (max-width:770px) {
+    #main_root{
+            padding-top: 1px;
+            margin-top: 0px;
+    }
+    header{
+        height: 15vh;
+    }
+    .logo{
+        padding-top: 0px;
+        margin-top: 0px;
+    }
+    .a2{
+        width: 5em;
+        grid-column: 3;
+        margin-right: 2rem;
+        padding: 0;
+        grid-row: 1;
+    }
+    .a1{
+        width: 5em;
+        grid-column: 0;
+        margin-left: 2rem;
+        padding: 0;
+        grid-row: 1;
+    }
+    .card{
+        width: 20rem;
+        height: 40rem;
+        margin-top: auto;
+        margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
+        background-color: #fbad3883;
+        margin-top: 2rem;
+        padding: 2rem;
+    }
+    .img{
+        width: 5px;
+        height: 5px;
+        padding-left:0px;
+    }
+    .h5{
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        
+    }
+}
